@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e131d">
+    <title>Obsidian Casino | Experiencia en vivo</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: #0e131d;
+        color: #dee2f1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(ellipse at 75% 0, rgb(245 183 56 / 12%), transparent 42rem),
+          #0e131d;
+      }
+
+      main {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 14px;
+        color: #f5b738;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 720px;
+        margin: 0;
+        font-size: clamp(2.5rem, 7vw, 5rem);
+        letter-spacing: -0.055em;
+        line-height: 1.02;
+      }
+
+      .intro {
+        max-width: 620px;
+        margin: 20px 0 44px;
+        color: #b8c0d4;
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .screen-card {
+        display: grid;
+        grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+        overflow: hidden;
+        border: 1px solid rgb(255 216 150 / 18%);
+        border-radius: 20px;
+        background: #171c26;
+        color: inherit;
+        text-decoration: none;
+        transition: border-color 160ms ease, transform 160ms ease;
+      }
+
+      .screen-card:hover,
+      .screen-card:focus-visible {
+        transform: translateY(-3px);
+        border-color: #f5b738;
+      }
+
+      .screen-preview {
+        display: block;
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        object-position: top;
+        background: #090e18;
+      }
+
+      .screen-info {
+        align-self: center;
+        padding: 36px;
+      }
+
+      .screen-info h2 {
+        margin: 0 0 12px;
+        color: #ffd896;
+        font-size: 1.75rem;
+      }
+
+      .screen-info p {
+        margin: 0 0 24px;
+        color: #b8c0d4;
+        line-height: 1.6;
+      }
+
+      .screen-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #f5b738;
+        font-weight: 700;
+      }
+
+      footer {
+        margin-top: 36px;
+        color: #8790a3;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 720px) {
+        main {
+          padding: 48px 0;
+        }
+
+        .screen-card {
+          grid-template-columns: 1fr;
+        }
+
+        .screen-preview {
+          height: 240px;
+        }
+
+        .screen-info {
+          padding: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Obsidian Casino</p>
+      <h1>Una experiencia de casino en vivo.</h1>
+      <p class="intro">
+        Interfaz de entretenimiento digital con mesas en directo, juegos de
+        casino y una estética nocturna inspirada en el lujo y el oro.
+      </p>
+
+      <a class="screen-card" href="views/casino-en-vivo.html">
+        <img
+          class="screen-preview"
+          src="views/img/casino-en-vivo.png"
+          alt="Vista previa de la pantalla Casino en Vivo de Obsidian Casino"
+        >
+        <div class="screen-info">
+          <h2>Casino en Vivo</h2>
+          <p>
+            Explora las mesas en tiempo real, filtra por tipo de juego y
+            descubre las salas VIP.
+          </p>
+          <span class="screen-link">Abrir la vista <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+
+      <footer>Diseño de Google Stitch · Proyecto Casino Online Responsive Web</footer>
+    </main>
+  </body>
+</html>
